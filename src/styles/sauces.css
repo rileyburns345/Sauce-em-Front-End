@@ -1,0 +1,12 @@
+.selected-li {
+  display: inline-block;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: right;
+}
+
+.delete-button {
+  padding-right: 20px;
+  float: right;
+
+}

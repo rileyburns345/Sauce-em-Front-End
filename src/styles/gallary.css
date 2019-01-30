@@ -1,0 +1,32 @@
+/* .card-img-top {
+  height: 200px;
+  width: 100;
+} */
+
+
+.list-group {
+  text-align: center;
+}
+
+/* .card-body {
+  margin: 2px;
+  display: inline-block;
+} */
+
+.card {
+  height: 100%;
+}
+
+.card-title {
+  color: black;
+  margin: 2px;
+  margin-left: 1px;
+}
+
+.my-4 {
+  text-align: center;
+}
+
+.nav-link {
+  color: black;
+}

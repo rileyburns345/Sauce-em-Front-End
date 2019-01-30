@@ -1,0 +1,29 @@
+.bg-img {
+  /* The image used */
+  background-image: url("https://images.pexels.com/photos/326268/pexels-photo-326268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+  /* Full height */
+  height: 600px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.75;
+  z-index: -1;
+
+}
+
+.brand-name {
+  font-size: 100px;
+}
+
+.home-text {
+  color: ivory;
+  text-align: center;
+  padding-top: 175px;
+}
+
+.link-text {
+  color: black;
+  text-align: center;
+}
