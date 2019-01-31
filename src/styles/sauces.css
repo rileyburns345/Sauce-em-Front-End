@@ -3,10 +3,32 @@
   padding-left: 40px;
   padding-right: 40px;
   text-align: right;
+  font-family: 'Karla', sans-serif;
 }
 
 .delete-button {
   padding-right: 20px;
   float: right;
+}
 
+.submitSaucesButton {
+  background-color: #555D96;
+  color: white;
+}
+
+.saucesHeader {
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Karla', sans-serif;
+}
+
+.sauceText {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: 'Karla', sans-serif;
+}
+
+.saucesText {
+  font-family: 'Karla', sans-serif;
 }

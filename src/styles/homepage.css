@@ -15,15 +15,18 @@
 
 .brand-name {
   font-size: 100px;
+  font-family: 'Karla', sans-serif;
 }
 
 .home-text {
   color: ivory;
   text-align: center;
   padding-top: 175px;
+  font-family: 'Karla', sans-serif;
 }
 
 .link-text {
   color: black;
   text-align: center;
+  font-family: 'Karla', sans-serif;
 }

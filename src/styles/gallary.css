@@ -13,9 +13,20 @@
   display: inline-block;
 } */
 
+.container-fluid {
+  flex-direction: row;
+}
+
 .card {
+  width: 25%;
+  display: inline-block;
+  padding-left: 10px;
   height: 100%;
 }
+
+/* .cart-items {
+  text-align: center;
+} */
 
 .card-title {
   color: black;
@@ -27,6 +38,35 @@
   text-align: center;
 }
 
+.nav {
+  position: sticky;
+}
+
 .nav-link {
   color: black;
+}
+
+.nav-link:hover {
+  color: #555D96
+}
+
+.subscribeButton {
+  margin: 0 auto;
+}
+
+.cartButton {
+  float: right;
+  margin-right: 20px;
+  background-color: #555D96;
+  color: white;
+}
+
+.hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
 }

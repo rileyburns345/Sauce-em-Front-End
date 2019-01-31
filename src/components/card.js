@@ -1,18 +1,20 @@
 import React from 'react'
+import AddItem from './AddItem'
 import "../styles/card.css"
 
 const Card = ({product, suppliers}) => {
   // console.log('this is it', suppliers);
   console.log('5555', suppliers.filter(supplier => product.supplierID === supplier.id)[0].supplierName)
   return (
-    <div>
-      <img class="i-card-img" src={product.productPicture} alt="Card image cap" />
-      <div class="i-card-body">
-        <h3 class="i-card-title">{product.productName}</h3>
-        <h4 className="i-supplier"> by {suppliers.filter(supplier => product.supplierID === supplier.id)[0].supplierName}
+    <div className="saucesText cardText">
+      <img className="i-card-img" src={product.productPicture} alt="Card image cap" />
+      <div className="i-card-body">
+        <h3 className="i-card-title saucesText">{product.productName}</h3>
+        <h4 className="i-supplier saucesText"> by {suppliers.filter(supplier => product.supplierID === supplier.id)[0].supplierName}
         </h4>
-        <p className="i-card-text">{product.productDescription}</p>
-        <h5>${product.unitPrice}</h5>
+        <p className="i-card-text saucesText">{product.productDescription}</p>
+        <h5 className="saucesText">${product.unitPrice}</h5>
+        <AddItem product={product.productName}/>
       </div>
     </div>
 

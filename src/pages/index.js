@@ -12,7 +12,8 @@ const IndexPage = () => (
      <div className="home-text">
       <h1 className="brand-name">Sauce'em</h1>
       <h3>Mix & Match | Dip & Dabble</h3>
-      <Link className="link-text" to="/sauces"><p>This months sauces</p></Link>
+
+      <Link className="link-text" to="/sauces"><button type="button" className="btn btn-outline-warning">This months sauces</button></Link>
      </div>
     </div>
   </div>

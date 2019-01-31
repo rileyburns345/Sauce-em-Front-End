@@ -10,11 +10,26 @@
   color: ivory;
   padding-left: 20px;
   padding-right: 20px;
+  font-family: 'Karla', sans-serif;
+
+}
+
+.m-link-text:hover{
+  color: black;
 }
 
 .l-link-text {
   color: ivory;
   text-align: right;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Karla', sans-serif;
+}
+
+.l-link-text:hover{
+  color: black;
 }
 
 .subscribeButton {

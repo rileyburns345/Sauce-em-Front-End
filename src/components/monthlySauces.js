@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import MonthlySauce from './MonthlySauce'
+// import SubscirbeModal from './subscribeModal'
 import "../styles/gallary.css"
 
 
@@ -55,8 +56,11 @@ async componentDidMount() {
    }
   }
 
-  // onSubmit = () => {
-  //   this.state.products.selected
+  // onSubscribe = () => {
+  //   console.log('yyyyyyeeeeerrrrr BBOOOYY');
+  //   return (
+  //     <MonthlySauce />
+  //   )
   // }
 
 
@@ -71,25 +75,55 @@ async componentDidMount() {
   }
 
   createProductCards = () => {
-    return this.state.products.map((product, id) => {
-        if (product.id === 1 || product.id === 2 || product.id === 3 || product.id === 4 || product.id === 5 || product.id === 6 || product.id === 8 || product.id === 10 || product.id === 12 || product.id === 13 || product.id === 15 || product.id === 16) {
-          return (
-            <MonthlySauce id={product.id} suppliers={this.state.suppliers} product={product} isInCart={this.state.selected.includes(product.id)} name={product.productName} jpg={product.productPicture} btnClick={this.onAddClick}/>
-          )
+    let chosenSauces = this.state.products.filter(product => {
+      if (product.id === 1 || product.id === 2 || product.id === 5 || product.id === 6 || product.id === 10 || product.id === 11 || product.id === 14 || product.id === 15 || product.id === 16 || product.id === 17 || product.id === 19 || product.id === 20) {
+        return (
+          product
+        )
+      }
+    })
+
+      console.log('we are the chosen', chosenSauces);
+      let theSauces = []
+      let sauceArray = []
+      let arr = chosenSauces
+      for (let i = 0; i < arr.length; i++) {
+        sauceArray.push(arr[i])
+        if ((i+1)%4 === 0) {
+          theSauces.push(sauceArray)
+          sauceArray = []
+        }else if (i === arr.length-1){
+          theSauces.push(sauceArray)
         }
+      }
+      console.log('this is it', theSauces);
+      return theSauces.map((array, id) => {
+      return (
+          <div className="row" key={id}>
+            {array.map((product)=> {
+                return (
+                  <MonthlySauce id={product.id} suppliers={this.state.suppliers} product={product} isInCart={this.state.selected.includes(product.id)} name={product.productName} jpg={product.productPicture} btnClick={this.onAddClick}/>
+                )
+
+            })}
+          </div>
+        )
+
     });
   }
 
   render() {
     console.log(this.state);
     return(
-  <div>
+  <div className="saucesText">
     <div className="container">
       <div className="selectedCart" id="selectedCart">
-        <h2 className="cartHeader">Cart</h2>
-        <div>
+      <hr/>
+        <div className="nav justify-content-center">
           {this.createSelectedView()}
-          <button className="subscribeButton">sauce-scribe</button>
+          <button type="button" style={this.state.selected.length > 3 ? {backgroundColor: "green"} : {
+            backgroundColor: '#555D96'
+          }} className="btn subscribeButton" data-toggle="modal" data-target="#exampleModalCenter">sauce-scribe</button>
         </div>
       </div>
     </div>

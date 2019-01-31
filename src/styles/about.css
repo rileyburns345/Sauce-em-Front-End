@@ -1,0 +1,28 @@
+.aboutHeader {
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  font-family: 'Karla', sans-serif;
+}
+
+.aboutText {
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  font-family: 'Karla', sans-serif;
+}
+
+.about-bg-img {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1509358271058-acd22cc93898?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+
+  /* Full height */
+  height: 600px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.75;
+  z-index: -1;
+
+}

@@ -1,9 +1,13 @@
-/* .i-card-img {
+.i-card-img {
   height: 400px;
   width: 100;
   float: left;
   display: inline;
-} */
+}
+
+.cardText {
+  padding-top: 30px;
+}
 
 .i-supplier {
   display: inline;

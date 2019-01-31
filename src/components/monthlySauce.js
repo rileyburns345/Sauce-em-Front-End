@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from "gatsby"
+/// SSTTOOPP HHEERREE
 
 const MonthlySauce = ({id, product, suppliers, isInCart, name, jpg, btnClick}) => {
   console.log('wooow', {isInCart});
   return (
-    <div class="card" id={id}>
+    <div className="card saucesText" id={id}>
     <Link key={id} to='/singleSauceView'
       state= {{
         product: product,
@@ -13,15 +14,15 @@ const MonthlySauce = ({id, product, suppliers, isInCart, name, jpg, btnClick}) =
       activeStyle={{
         color: "black",
       }}>
-      <img class="card-img-top" src={jpg} alt="Card image cap" />
-      <div class="card-body">
-        <h5 class="card-title">{name}</h5>
+      <img className="card-img-top" src={jpg} alt="Card image cap" />
+      <div className="card-body">
+        <h5 className="card-title saucesText">{name}</h5>
       </div>
      </Link>
-      <div class="card-footer" style={isInCart ? {backgroundColor: "lightgrey"} : {
+      <div className="card-footer" style={isInCart ? {backgroundColor: "lightgrey"} : {
         color: 'black'
       }}>
-        <small class="text-muted">
+        <small className="text-muted">
           <button onClick={() => {btnClick(product.id)}}>{(isInCart ? "Delete" : "Add") }</button>
         </small>
       </div>
